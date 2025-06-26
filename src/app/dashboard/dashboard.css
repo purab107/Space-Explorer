@@ -1,0 +1,84 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .stars, .stars2, .stars3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 2px;
+      background: white;
+      box-shadow:
+        100px 200px white,
+        200px 300px white,
+        300px 100px white,
+        400px 400px white,
+        500px 200px white,
+        600px 500px white,
+        700px 300px white,
+        800px 100px white,
+        900px 400px white,
+        1000px 250px white,
+        1100px 350px white,
+        1200px 150px white,
+        1300px 200px white,
+        1400px 300px white,
+        1500px 400px white;
+      animation: twinkle 2s infinite ease-in-out alternate;
+    }
+
+    .stars2 {
+      box-shadow:
+        50px 150px white,
+        150px 250px white,
+        250px 50px white,
+        350px 350px white,
+        450px 150px white,
+        550px 450px white,
+        650px 250px white,
+        750px 50px white,
+        850px 350px white,
+        950px 200px white,
+        1050px 300px white,
+        1150px 100px white,
+        1250px 150px white,
+        1350px 250px white,
+        1450px 350px white;
+      animation-delay: 1s;
+    }
+
+    .stars3 {
+      box-shadow:
+        75px 100px white,
+        175px 200px white,
+        275px 0px white,
+        375px 300px white,
+        475px 100px white,
+        575px 400px white,
+        675px 200px white,
+        775px 0px white,
+        875px 300px white,
+        975px 150px white,
+        1075px 250px white,
+        1175px 50px white,
+        1275px 100px white,
+        1375px 200px white,
+        1475px 300px white;
+      animation-delay: 2s;
+    }
+
+    @keyframes twinkle {
+      0% {
+        opacity: 0.3;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
